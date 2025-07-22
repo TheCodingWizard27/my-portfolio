@@ -16,6 +16,7 @@ import {
 } from '@chakra-ui/react'
 import { HamburgerIcon } from '@chakra-ui/icons'
 import ThemeToggleButton from './theme-toggle-button'
+import Logo from './logo'
 import { IoLogoGithub } from 'react-icons/io5'
 
 const LinkItem = ({ href, path, target, children, ...props }) => {
@@ -70,8 +71,7 @@ const NavBar = props => {
         justifyContent="space-between"
       >
         <Flex align="center">
-          <Heading as="h1" size="lg" letterSpacing={'tighter'}>
-          </Heading>
+          <Logo />
         </Flex>
 
         <Stack
