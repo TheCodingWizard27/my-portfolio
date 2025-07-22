@@ -78,7 +78,7 @@ const projects = [
     title: "Shop-Simplify",
     description: "A streamlined platform for local buying and selling, featuring secure transactions and real-time messaging.",
     technologies: ["React", "Node.js", "Express", "Firebase"],
-    githubUrl: "https://github.com/TheCodingWizard27/task-manager",
+    githubUrl: "https://github.com/chimpiriudaykiran/MarketPlace.git",
     liveUrl: "https://shop-simplify.vercel.app/",
     imageUrl: "/images/ss-screenshot.png"
   },
