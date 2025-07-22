@@ -51,12 +51,12 @@ const Home = () => (
         <Box align="center" my={4}>
           <Button
             as={NextLink}
-            href="/projects"
+            href="./public/Resume.pdf"
             scroll={false}
             rightIcon={<ChevronRightIcon />}
-            colorScheme="teal"
+            colorScheme="green"
           >
-            My portfolio
+            View my resume
           </Button>
         </Box>
       </Section>
@@ -97,7 +97,7 @@ const Home = () => (
               leftIcon={<IoLogoGithub />}
               borderRadius="full"
               _hover={{
-                bg: "teal.500",
+                bg: "purple.500",
                 transform: "translateY(-2px)",
                 boxShadow: "lg"
               }}
@@ -114,7 +114,7 @@ const Home = () => (
               leftIcon={<IoLogoLinkedin />}
               borderRadius="full"
               _hover={{
-                bg: "purple.500",
+                bg: "teal.500",
                 transform: "translateY(-2px)",
                 boxShadow: "lg"
               }}

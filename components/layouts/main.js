@@ -9,7 +9,7 @@ const Main = ({ children, router }) => {
     <Box as="main" pb={8}>
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+        <link rel="shortcut icon" href="../public/images/favicon.ico" type="image/x-icon" />
         <title>Raunak Upreti - Homepage</title>
       </Head>
 
@@ -21,8 +21,8 @@ const Main = ({ children, router }) => {
             borderColor="whiteAlpha.800"
             borderWidth={2}
             borderStyle="solid"
-            w="100px"
-            h="100px"
+            w="150px"
+            h="150px"
             display="inline-block"
             borderRadius="full"
             overflow="hidden"
@@ -30,8 +30,8 @@ const Main = ({ children, router }) => {
             <Image
               src="/images/raunak.jpg"
               alt="Profile image"
-              width="100"
-              height="100"
+              width="150"
+              height="150"
             />
           </Box>
         </Box>
