@@ -57,7 +57,7 @@ const Home = () => (
             rel="noopener noreferrer"
             rightIcon={<ChevronRightIcon />}
             bg="#00A86B"
-            color="black"
+            color={useColorModeValue('white', 'black')}
             _hover={{ bg: "#008B5A" }}
           >
             View my Resume
