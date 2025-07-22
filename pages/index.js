@@ -8,7 +8,7 @@ import {
   useColorModeValue,
   SimpleGrid
 } from '@chakra-ui/react'
-import { ChevronRightIcon } from '@chakra-ui/icons'
+import { DownloadIcon } from '@chakra-ui/icons'
 import Paragraph from '../components/paragraph'
 import { BioSection, BioTitle } from '../components/bio'
 import Layout from '../components/layouts/page-layout'
@@ -53,10 +53,10 @@ const Home = () => (
             as={NextLink}
             href="./public/Resume.pdf"
             scroll={false}
-            rightIcon={<ChevronRightIcon />}
+            rightIcon={<DownloadIcon />}
             colorScheme="green"
           >
-            View my resume
+            Download my Resume
           </Button>
         </Box>
       </Section>
