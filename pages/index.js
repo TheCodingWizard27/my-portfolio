@@ -10,10 +10,9 @@ import {
 } from '@chakra-ui/react'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import Paragraph from '../components/paragraph'
-import { BioSection, BioTitle } from '../components/bio'
 import Layout from '../components/layouts/page-layout'
 import Section from '../components/section'
-import { IoLogoGithub, IoLogoLinkedin } from 'react-icons/io5'
+import { IoLogoGithub, IoLogoLinkedin, IoMail } from 'react-icons/io5'
 
 const Home = () => (
   <Layout>
@@ -38,7 +37,7 @@ const Home = () => (
 
       <Section delay={0.1}>
         <Heading as="h3" variant="section-title">
-          Work
+          Who am I?
         </Heading>
         <Paragraph>
            I&apos;m a recent Computer Science graduate from the University of North Texas
@@ -50,9 +49,10 @@ const Home = () => (
         </Paragraph>
         <Box align="center" my={4}>
           <Button
-            as={NextLink}
-            href="./public/Resume.pdf"
-            scroll={false}
+            as="a"
+            href="documents/Resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
             rightIcon={<ChevronRightIcon />}
             bg="#00A86B"
             color="black"
@@ -63,21 +63,8 @@ const Home = () => (
         </Box>
       </Section>
 
-      <Section delay={0.2}>
-        <Heading as="h3" variant="section-title">
-          Bio
-        </Heading>
-        <BioSection>
-          <BioTitle>Education</BioTitle>
-          University of North Texas
-        </BioSection>
-        <BioSection>
-          <BioTitle>Experience</BioTitle>
-          Software Engineer Intern at Ergool.
-        </BioSection>
-      </Section>
 
-      <Section delay={0.3}>
+      <Section delay={0.2}>
         <Heading as="h3" variant="section-title">
           I ♥
         </Heading>
@@ -87,11 +74,11 @@ const Home = () => (
         </Paragraph>
       </Section>
 
-      <Section delay={0.4}>
+      <Section delay={0.3}>
         <Heading as="h3" variant="section-title">
           On the web
         </Heading>
-        <SimpleGrid columns={2} spacing={4} pt={4}>
+        <SimpleGrid columns={3} spacing={4} pt={4}>
           <Link href="https://github.com/TheCodingWizard27" target="_blank">
             <Button
               variant="solid"
@@ -106,7 +93,7 @@ const Home = () => (
               transition="all 0.2s"
               width="full"
             >
-              @TheCodingWizard27
+              GitHub
             </Button>
           </Link>
           <Link href="https://linkedin.com/in/raunakupreti" target="_blank">
@@ -124,6 +111,23 @@ const Home = () => (
               width="full"
             >
               LinkedIn
+            </Button>
+          </Link>
+          <Link href="mailto:raunakupreti2002@gmail.com" target="_blank">
+            <Button
+              variant="solid"
+              colorScheme="red"
+              leftIcon={<IoMail />}
+              borderRadius="full"
+              _hover={{
+                bg: "#D44638",
+                transform: "translateY(-2px)",
+                boxShadow: "lg"
+              }}
+              transition="all 0.2s"
+              width="full"
+            >
+              Email
             </Button>
           </Link>
         </SimpleGrid>
