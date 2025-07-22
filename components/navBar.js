@@ -17,3 +17,127 @@ import {
 import { HamburgerIcon } from '@chakra-ui/icons'
 import ThemeToggleButton from './theme-toggle-button'
 import { IoLogoGithub } from 'react-icons/io5'
+
+const LinkItem = ({ href, path, target, children, ...props }) => {
+  const active = path === href
+  const inactiveColor = useColorModeValue('gray.800', 'whiteAlpha.900')
+  const hoverColor = useColorModeValue('teal.500', 'teal.300')
+  return (
+    <Link
+      as={NextLink}
+      href={href}
+      scroll={false}
+      p={2}
+      bg={active ? 'grassTeal' : undefined}
+      color={active ? '#202023' : inactiveColor}
+      target={target}
+      _hover={{
+        color: hoverColor,
+        textDecoration: 'none'
+      }}
+      {...props}
+    >
+      {children}
+    </Link>
+  )
+}
+
+const MenuLink = forwardRef((props, ref) => (
+  <Link ref={ref} as={NextLink} {...props} />
+))
+
+MenuLink.displayName = 'MenuLink'
+
+const NavBar = props => {
+    const { path } = props
+
+    return (
+         <Box
+      position="fixed"
+      as="nav"
+      w="100%"
+      bg={useColorModeValue('#ffffff40', '#20202380')}
+      css={{ backdropFilter: 'blur(10px)' }}
+      zIndex={2}
+      {...props}
+    >
+      <Container
+        display="flex"
+        p={2}
+        maxW="container.md"
+        wrap="wrap"
+        alignItems="center"
+        justifyContent="space-between"
+      >
+        <Flex align="center">
+          <Heading as="h1" size="lg" letterSpacing={'tighter'}>
+          </Heading>
+        </Flex>
+
+        <Stack
+          direction={{ base: 'column', md: 'row' }}
+          display={{ base: 'none', md: 'flex' }}
+          width={{ base: 'full', md: 'auto' }}
+          alignItems="center"
+          position="absolute"
+          left="50%"
+          transform="translateX(-50%)"
+          mt={{ base: 4, md: 0 }}
+        >
+          <LinkItem href="/projects" path={path}>
+            Projects
+          </LinkItem>
+          <LinkItem href="/skills" path={path}>
+            Skills
+          </LinkItem>
+          <LinkItem
+            target="_blank"
+            href="https://github.com/TheCodingWizard27/my-portfolio"
+            path={path}
+            display="inline-flex"
+            alignItems="center"
+            style={{ gap: 4 }}
+            pl={2}
+          >
+            <IoLogoGithub />
+            Source
+          </LinkItem>
+        </Stack>
+
+        <Flex align="center">
+          <ThemeToggleButton />
+
+          <Box ml={2} display={{ base: 'inline-block', md: 'none' }}>
+            <Menu isLazy id="navbar-menu">
+              <MenuButton
+                as={IconButton}
+                icon={<HamburgerIcon />}
+                variant="outline"
+                aria-label="Options"
+              />
+              <MenuList>
+                <MenuItem as={MenuLink} href="/">
+                  About
+                </MenuItem>
+                <MenuItem as={MenuLink} href="/projects">
+                  Projects
+                </MenuItem>
+                <MenuItem as={MenuLink} href="/skills">
+                  Skills
+                </MenuItem>
+                <MenuItem
+                  as={Link}
+                  href="https://github.com/TheCodingWizard27/my-portfolio"
+                >
+                  View Source
+                </MenuItem>
+              </MenuList>
+            </Menu>
+          </Box>
+        </Flex>
+      </Container>
+    </Box>
+    )
+}
+
+export default NavBar
