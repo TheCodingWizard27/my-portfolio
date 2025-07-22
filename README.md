@@ -76,9 +76,6 @@ npm run dev
 ## 📧 Contact
 
 **Raunak Upreti**
+- Email: raunakupreti2002@gmail.com
 - GitHub: [@TheCodingWizard27](https://github.com/TheCodingWizard27)
 - LinkedIn: [raunakupreti](https://linkedin.com/in/raunakupreti)
-
-## 📄 License
-
-This project is open source and available under the MIT License.
