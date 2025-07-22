@@ -106,7 +106,7 @@ const Home = () => (
         <Heading as="h3" variant="section-title">
           Let&apos;s connect
         </Heading>
-        <SimpleGrid columns={3} spacing={4} pt={4}>
+        <SimpleGrid columns={[1, 2, 3]} spacing={4} pt={4}>
           <Link href="https://github.com/TheCodingWizard27" target="_blank">
             <Button
               variant="solid"
