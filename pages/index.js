@@ -8,7 +8,7 @@ import {
   useColorModeValue,
   SimpleGrid
 } from '@chakra-ui/react'
-import { DownloadIcon } from '@chakra-ui/icons'
+import { ChevronRightIcon } from '@chakra-ui/icons'
 import Paragraph from '../components/paragraph'
 import { BioSection, BioTitle } from '../components/bio'
 import Layout from '../components/layouts/page-layout'
@@ -53,10 +53,12 @@ const Home = () => (
             as={NextLink}
             href="./public/Resume.pdf"
             scroll={false}
-            rightIcon={<DownloadIcon />}
-            colorScheme="green"
+            rightIcon={<ChevronRightIcon />}
+            bg="#00A86B"
+            color="black"
+            _hover={{ bg: "#008B5A" }}
           >
-            Download my Resume
+            View my Resume
           </Button>
         </Box>
       </Section>
@@ -97,7 +99,7 @@ const Home = () => (
               leftIcon={<IoLogoGithub />}
               borderRadius="full"
               _hover={{
-                bg: "purple.500",
+                bg: "#6e5494",
                 transform: "translateY(-2px)",
                 boxShadow: "lg"
               }}
@@ -114,7 +116,7 @@ const Home = () => (
               leftIcon={<IoLogoLinkedin />}
               borderRadius="full"
               _hover={{
-                bg: "teal.500",
+                bg: "#0077B5",
                 transform: "translateY(-2px)",
                 boxShadow: "lg"
               }}

@@ -70,7 +70,7 @@ const NavBar = props => {
         alignItems="center"
         justifyContent="space-between"
       >
-        <Flex align="center">
+        <Flex align="center" flex="1" justifyContent="flex-start">
           <Logo />
         </Flex>
 
@@ -79,10 +79,7 @@ const NavBar = props => {
           display={{ base: 'none', md: 'flex' }}
           width={{ base: 'full', md: 'auto' }}
           alignItems="center"
-          position="absolute"
-          left="50%"
-          transform="translateX(-50%)"
-          mt={{ base: 4, md: 0 }}
+          spacing={6}
         >
           <LinkItem href="/projects" path={path}>
             Projects
@@ -104,7 +101,7 @@ const NavBar = props => {
           </LinkItem>
         </Stack>
 
-        <Flex align="center">
+        <Flex align="center" flex="1" justifyContent="flex-end">
           <ThemeToggleButton />
 
           <Box ml={2} display={{ base: 'inline-block', md: 'none' }}>
