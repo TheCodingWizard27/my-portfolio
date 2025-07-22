@@ -1,5 +1,5 @@
 import { Container, Heading, SimpleGrid } from '@chakra-ui/react'
-import Layout from '../components/layouts/article'
+import Layout from '../components/layouts/page-layout'
 
 const Projects = () => (
   <Layout title="Projects">

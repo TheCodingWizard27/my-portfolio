@@ -1,5 +1,5 @@
 import { Container, Heading, SimpleGrid, Box, Text, Icon } from '@chakra-ui/react'
-import Layout from '../components/layouts/article'
+import Layout from '../components/layouts/page-layout'
 import Section from '../components/section'
 import { SiHtml5, SiCss3, SiJavascript, SiTypescript, SiReact, SiNextdotjs, SiTailwindcss, SiMongodb, SiPostgresql } from 'react-icons/si'
 

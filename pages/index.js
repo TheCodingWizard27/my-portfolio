@@ -11,7 +11,7 @@ import {
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import Paragraph from '../components/paragraph'
 import { BioSection, BioTitle } from '../components/bio'
-import Layout from '../components/layouts/article'
+import Layout from '../components/layouts/page-layout'
 import Section from '../components/section'
 import { IoLogoGithub, IoLogoLinkedin } from 'react-icons/io5'
 
