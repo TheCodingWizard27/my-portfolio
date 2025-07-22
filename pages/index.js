@@ -6,13 +6,17 @@ import {
   Box,
   Button,
   useColorModeValue,
-  SimpleGrid
+  SimpleGrid,
+  HStack,
+  Text,
+  Icon
 } from '@chakra-ui/react'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import Paragraph from '../components/paragraph'
 import Layout from '../components/layouts/page-layout'
 import Section from '../components/section'
 import { IoLogoGithub, IoLogoLinkedin, IoMail } from 'react-icons/io5'
+import { FaCode, FaPlane, FaFilm, FaGamepad, FaTv, FaBasketballBall, FaCoffee } from 'react-icons/fa'
 
 const Home = () => (
   <Layout>
@@ -64,17 +68,43 @@ const Home = () => (
 
       <Section delay={0.2}>
         <Heading as="h3" variant="section-title">
-          I ♥
+           I ♥
         </Heading>
-        <Paragraph>
-          Technology, Travelling, Watching Documentaries, Playing Video Games, 
-          Watch Anime, Play Basketball, Coffee ☕
-        </Paragraph>
+        <SimpleGrid columns={[2, 3, 4]} spacing={4} pt={4}>
+          <HStack spacing={2}>
+            <Icon as={FaCode} color="#00A86B" />
+            <Text fontSize="sm">Technology</Text>
+          </HStack>
+          <HStack spacing={2}>
+            <Icon as={FaPlane} color="#00A86B" />
+            <Text fontSize="sm">Travelling</Text>
+          </HStack>
+          <HStack spacing={2}>
+            <Icon as={FaFilm} color="#00A86B" />
+            <Text fontSize="sm">Documentaries</Text>
+          </HStack>
+          <HStack spacing={2}>
+            <Icon as={FaGamepad} color="#00A86B" />
+            <Text fontSize="sm">Video Games</Text>
+          </HStack>
+          <HStack spacing={2}>
+            <Icon as={FaTv} color="#00A86B" />
+            <Text fontSize="sm">Anime</Text>
+          </HStack>
+          <HStack spacing={2}>
+            <Icon as={FaBasketballBall} color="#00A86B" />
+            <Text fontSize="sm">Basketball</Text>
+          </HStack>
+          <HStack spacing={2}>
+            <Icon as={FaCoffee} color="#00A86B" />
+            <Text fontSize="sm">Coffee</Text>
+          </HStack>
+        </SimpleGrid>
       </Section>
 
       <Section delay={0.3}>
         <Heading as="h3" variant="section-title">
-          On the web
+          Let&apos;s connect
         </Heading>
         <SimpleGrid columns={3} spacing={4} pt={4}>
           <Link href="https://github.com/TheCodingWizard27" target="_blank">
