@@ -1,40 +1,97 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+# Raunak Upreti - Personal Portfolio
 
-## Getting Started
+A modern, responsive personal portfolio website built with Next.js and Chakra UI, featuring dark/light mode toggle and smooth animations.
 
-First, run the development server:
+## 🚀 Features
 
+- **Modern Design**: Clean, professional interface with glassmorphism effects
+- **Dark/Light Mode**: Toggle between themes with system preference support
+- **Responsive**: Optimized for all device sizes
+- **Smooth Animations**: Powered by Framer Motion
+- **Fast Performance**: Built with Next.js for optimal loading speeds
+- **SEO Optimized**: Server-side rendering and meta tag optimization
+
+## 🛠️ Tech Stack
+
+- **Framework**: Next.js 15.4.2
+- **UI Library**: Chakra UI 2.10.9
+- **Animations**: Framer Motion 12.23.6
+- **Icons**: React Icons & Chakra UI Icons
+- **Analytics**: Vercel Analytics
+- **Styling**: Emotion (CSS-in-JS)
+
+## 📦 Installation
+
+1. Clone the repository:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/TheCodingWizard27/my-portfolio.git
+cd my-portfolio
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Install dependencies:
+```bash
+npm install
+```
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+3. Start the development server:
+```bash
+npm run dev
+```
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+4. Open [http://localhost:3000](http://localhost:3000) to view the site.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
+## 🎯 Available Scripts
 
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- `npm run dev` - Start development server on all network interfaces
+- `npm run build` - Build the application for production
+- `npm run start` - Start the production server
+- `npm run lint` - Run ESLint for code quality checks
+- `npm run prettier` - Format code with Prettier
 
-## Learn More
+## 📁 Project Structure
 
-To learn more about Next.js, take a look at the following resources:
+```
+├── components/           # Reusable React components
+│   ├── layouts/         # Page layout components
+│   ├── icons/          # Custom icon components
+│   └── ...             # UI components (bio, navbar, etc.)
+├── lib/                # Utility functions and configurations
+├── pages/              # Next.js pages
+│   ├── index.js        # Home page
+│   ├── projects.js     # Portfolio projects
+│   └── skills.js       # Skills showcase
+├── public/             # Static assets
+└── ...                 # Configuration files
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
+## 🎨 Key Components
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **Homepage**: Introduction with bio, experience, and social links
+- **Projects**: Showcase of development work and achievements
+- **Skills**: Technical competencies and expertise areas
+- **Theme Toggle**: Dynamic dark/light mode switching
+- **Responsive Navigation**: Mobile-friendly navigation system
 
-## Deploy on Vercel
+## 🌐 Deployment
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+The site is optimized for deployment on Vercel:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+1. Push your code to GitHub
+2. Connect your repository to Vercel
+3. Deploy automatically with each push to main branch
+
+For other platforms, use:
+```bash
+npm run build
+npm run start
+```
+
+## 📧 Contact
+
+**Raunak Upreti**
+- GitHub: [@TheCodingWizard27](https://github.com/TheCodingWizard27)
+- LinkedIn: [raunakupreti](https://linkedin.com/in/raunakupreti)
+
+## 📄 License
+
+This project is open source and available under the MIT License.
