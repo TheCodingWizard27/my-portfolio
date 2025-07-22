@@ -15,11 +15,7 @@ const getTechnologyIcon = (tech) => {
     'Express': <SiExpress color="#000000" />,
     'Firebase': <SiFirebase color="#FFCA28" />,
     'Chakra UI': <SiChakraui color="#319795" />,
-    'Framer Motion': <SiFramer color="#0055FF" />,
-    'TypeScript': <SiTypescript color="#3178C6" />,
-    'Tailwind CSS': <SiTailwindcss color="#06B6D4" />,
-    'Chart.js': <SiChartdotjs color="#FF6384" />,
-    'Weather API': <IoGlobe color="#4A90E2" />
+    'Framer Motion': <SiFramer color="#0055FF" />
   }
   return iconMap[tech] || <Text fontSize="xs">{tech}</Text>
 }
@@ -89,21 +85,6 @@ const projects = [
     githubUrl: "https://github.com/TheCodingWizard27/my-portfolio",
     liveUrl: "https://raunakupreti.vercel.app",
     imageUrl: "/images/portfolio-screenshot.png"
-  },
-  {
-    title: "E-Commerce Dashboard",
-    description: "An admin dashboard for e-commerce management with analytics, inventory tracking, and order management features.",
-    technologies: ["React", "TypeScript", "Chart.js", "Tailwind CSS"],
-    githubUrl: "https://github.com/TheCodingWizard27/ecommerce-dashboard",
-    imageUrl: "/images/ecommerce-dashboard-screenshot.png"
-  },
-  {
-    title: "Weather App",
-    description: "A weather application that displays current weather and 5-day forecast with geolocation support and responsive design.",
-    technologies: ["JavaScript", "CSS", "Weather API", "HTML5"],
-    githubUrl: "https://github.com/TheCodingWizard27/weather-app",
-    liveUrl: "https://weather-app-demo.vercel.app",
-    imageUrl: "/images/weather-app-screenshot.png"
   }
 ]
 
