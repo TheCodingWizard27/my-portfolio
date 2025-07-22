@@ -3,7 +3,7 @@ import {
     cookieStorageManagerSSR,
     localStorageManager
 } from '@chakra-ui/react'
-import theme from '../lib/theme'
+import theme from '../pages/lib/theme'
 
 
 
