@@ -40,12 +40,10 @@ const Home = () => (
           Who am I?
         </Heading>
         <Paragraph>
-           I&apos;m a recent Computer Science graduate from the University of North Texas
+          I am a recent Computer Science graduate from the University of North Texas
                 with experience in Full-Stack Development, System Optimization, and IT
                 solutions. Passionate about problem-solving and staying updated with emerging
-                technologies, I am always eager to learn and adapt. Beyond coding, I love to travel,
-                watch documentaries, play video games, dive into anime, and play
-                basketball.
+                technologies, I am always eager to learn and adapt.
         </Paragraph>
         <Box align="center" my={4}>
           <Button
