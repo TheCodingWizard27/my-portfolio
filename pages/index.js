@@ -37,7 +37,7 @@ const Home = () => (
 
       <Section delay={0.1}>
         <Heading as="h3" variant="section-title">
-          Work
+          Who am I?
         </Heading>
         <Paragraph>
            I&apos;m a recent Computer Science graduate from the University of North Texas
