@@ -72,19 +72,6 @@ npm run dev
 - **Theme Toggle**: Dynamic dark/light mode switching
 - **Responsive Navigation**: Mobile-friendly navigation system
 
-## 🌐 Deployment
-
-The site is optimized for deployment on Vercel:
-
-1. Push your code to GitHub
-2. Connect your repository to Vercel
-3. Deploy automatically with each push to main branch
-
-For other platforms, use:
-```bash
-npm run build
-npm run start
-```
 
 ## 📧 Contact
 
