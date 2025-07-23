@@ -17,7 +17,6 @@ A modern, responsive personal portfolio website built with Next.js and Chakra UI
 - **UI Library**: Chakra UI 2.10.9
 - **Animations**: Framer Motion 12.23.6
 - **Icons**: React Icons & Chakra UI Icons
-- **Analytics**: Vercel Analytics
 - **Styling**: Emotion (CSS-in-JS)
 
 ## 📦 Installation
