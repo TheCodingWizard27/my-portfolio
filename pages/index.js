@@ -59,6 +59,20 @@ const Home = () => (
             bg="#00A86B"
             color={useColorModeValue('white', 'black')}
             _hover={{ bg: "#008B5A" }}
+            css={{
+              '@keyframes bounce': {
+                '0%, 20%, 50%, 80%, 100%': {
+                  transform: 'translateY(0)'
+                },
+                '40%': {
+                  transform: 'translateY(-10px)'
+                },
+                '60%': {
+                  transform: 'translateY(-5px)'
+                }
+              },
+              animation: 'bounce 2s infinite'
+            }}
           >
             View my Resume
           </Button>
