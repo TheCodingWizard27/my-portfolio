@@ -56,9 +56,9 @@ const Home = () => (
             target="_blank"
             rel="noopener noreferrer"
             rightIcon={<ChevronRightIcon />}
-            bg="#00A86B"
+            bg="#00FF99"
             color={useColorModeValue('white', 'black')}
-            _hover={{ bg: "#008B5A" }}
+            _hover={{ bg: "#00E085" }}
             css={{
               '@keyframes bounce': {
                 '0%, 20%, 50%, 80%, 100%': {
@@ -86,31 +86,31 @@ const Home = () => (
         </Heading>
         <SimpleGrid columns={[2, 3, 4]} spacing={4} pt={4}>
           <HStack spacing={2}>
-            <Icon as={FaCode} color="#00A86B" />
+            <Icon as={FaCode} color="#00FF99" />
             <Text fontSize="sm">Technology</Text>
           </HStack>
           <HStack spacing={2}>
-            <Icon as={FaPlane} color="#00A86B" />
+            <Icon as={FaPlane} color="#00FF99" />
             <Text fontSize="sm">Travelling</Text>
           </HStack>
           <HStack spacing={2}>
-            <Icon as={FaFilm} color="#00A86B" />
+            <Icon as={FaFilm} color="#00FF99" />
             <Text fontSize="sm">Documentaries</Text>
           </HStack>
           <HStack spacing={2}>
-            <Icon as={FaGamepad} color="#00A86B" />
+            <Icon as={FaGamepad} color="#00FF99" />
             <Text fontSize="sm">Video Games</Text>
           </HStack>
           <HStack spacing={2}>
-            <Icon as={FaTv} color="#00A86B" />
+            <Icon as={FaTv} color="#00FF99" />
             <Text fontSize="sm">Anime</Text>
           </HStack>
           <HStack spacing={2}>
-            <Icon as={FaBasketballBall} color="#00A86B" />
+            <Icon as={FaBasketballBall} color="#00FF99" />
             <Text fontSize="sm">Basketball</Text>
           </HStack>
           <HStack spacing={2}>
-            <Icon as={FaCoffee} color="#00A86B" />
+            <Icon as={FaCoffee} color="#00FF99" />
             <Text fontSize="sm">Coffee</Text>
           </HStack>
         </SimpleGrid>
