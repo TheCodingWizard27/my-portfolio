@@ -53,14 +53,14 @@ const ProjectCard = ({ title, description, technologies, githubUrl, liveUrl, ima
     <Flex gap={3} justify="center" align="center">
       {githubUrl && (
         <Link href={githubUrl} target="_blank" _hover={{ textDecoration: 'none' }}>
-          <Box display="flex" alignItems="center" gap={1} _hover={{ color: '#00A86B' }}>
+          <Box display="flex" alignItems="center" gap={1} _hover={{ color: '#00FF99' }}>
             <IoLogoGithub /> GitHub
           </Box>
         </Link>
       )}
       {liveUrl && (
         <Link href={liveUrl} target="_blank" _hover={{ textDecoration: 'none' }}>
-          <Box display="flex" alignItems="center" gap={1} _hover={{ color: '#00A86B' }}>
+          <Box display="flex" alignItems="center" gap={1} _hover={{ color: '#00FF99' }}>
             <IoGlobe /> Live Demo
           </Box>
         </Link>
