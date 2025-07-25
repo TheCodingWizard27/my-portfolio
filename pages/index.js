@@ -86,31 +86,31 @@ const Home = () => (
         </Heading>
         <SimpleGrid columns={[2, 3, 4]} spacing={4} pt={4}>
           <HStack spacing={2}>
-            <Icon as={FaCode} color="#00FF99" />
+            <Icon as={FaCode} color="#007ACC" />
             <Text fontSize="sm">Technology</Text>
           </HStack>
           <HStack spacing={2}>
-            <Icon as={FaPlane} color="#00FF99" />
+            <Icon as={FaPlane} color="#FF6B6B" />
             <Text fontSize="sm">Travelling</Text>
           </HStack>
           <HStack spacing={2}>
-            <Icon as={FaFilm} color="#00FF99" />
+            <Icon as={FaFilm} color="#FFD93D" />
             <Text fontSize="sm">Documentaries</Text>
           </HStack>
           <HStack spacing={2}>
-            <Icon as={FaGamepad} color="#00FF99" />
+            <Icon as={FaGamepad} color="#9B59B6" />
             <Text fontSize="sm">Video Games</Text>
           </HStack>
           <HStack spacing={2}>
-            <Icon as={FaTv} color="#00FF99" />
+            <Icon as={FaTv} color="#E74C3C" />
             <Text fontSize="sm">Anime</Text>
           </HStack>
           <HStack spacing={2}>
-            <Icon as={FaBasketballBall} color="#00FF99" />
+            <Icon as={FaBasketballBall} color="#FF8C42" />
             <Text fontSize="sm">Basketball</Text>
           </HStack>
           <HStack spacing={2}>
-            <Icon as={FaCoffee} color="#00FF99" />
+            <Icon as={FaCoffee} color="#8B4513" />
             <Text fontSize="sm">Coffee</Text>
           </HStack>
         </SimpleGrid>
