@@ -16,7 +16,7 @@ import Paragraph from '../components/paragraph'
 import Layout from '../components/layouts/page-layout'
 import Section from '../components/section'
 import { IoLogoGithub, IoLogoLinkedin, IoMail } from 'react-icons/io5'
-import { FaCode, FaPlane, FaFilm, FaGamepad, FaTv, FaBasketballBall, FaCoffee } from 'react-icons/fa'
+import { FaCode, FaPlane, FaFilm, FaGamepad, FaTv, FaBasketballBall, FaCoffee, FaMoneyBill } from 'react-icons/fa'
 
 const Home = () => (
   <Layout>
@@ -88,6 +88,10 @@ const Home = () => (
           <HStack spacing={2}>
             <Icon as={FaCode} color="#007ACC" />
             <Text fontSize="sm">Technology</Text>
+          </HStack>
+          <HStack spacing={2}>
+            <Icon as={FaMoneyBill} color="#05955bff" />
+            <Text fontSize="sm">Money</Text>
           </HStack>
           <HStack spacing={2}>
             <Icon as={FaPlane} color="#FF6B6B" />
